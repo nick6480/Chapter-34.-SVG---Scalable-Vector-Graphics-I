@@ -7,6 +7,7 @@
       .svg {
         height: 100px;
         width: 100px;
+        border: 3px solid black;
       }
     </style>
 
@@ -18,11 +19,11 @@
       <article>
         <h2>Viewport</h2>
         <p>Viewporten er et område hvor svg'en er synlig på skærmen, f.eks. kan en svg godt være halvt inde og ude af viewporten. </p>
-        <svg class="svg" style="border: 3px solid red">
+        <svg class="svg">
 
         <!-- circle -->
             <circle cx='100' cy='50' r='40'
-                    fill='black'/>
+                    fill='blue'/>
         </svg>
       </article>
 
@@ -31,16 +32,16 @@
         <p>Viewboxen styre hvad som vises inden i viewporten. </p><br>
 
         <p>De 2 første tal er startpositionen for Viewboxen som diktere indholdets position i Viewporten. </p>
-        <svg viewBox="0 0 100 100" class="svg" style="border: 3px solid red">
+        <svg viewBox="0 0 100 100" class="svg">
             <circle cx='50' cy='50' r='50'
-                    fill='black'/>
+                    fill='blue'/>
         </svg>
         <span>viewBox="0 0 100 100"</span><br><br>
 
 
-        <svg viewBox="40 40 100 100" class="svg" style="border: 3px solid red">
+        <svg viewBox="40 40 100 100" class="svg">
             <circle cx='50' cy='50' r='50'
-                    fill='black'/>
+                    fill='blue'/>
         </svg>
         <span>viewBox="40 40 100 100"</span><br><br><br>
 
@@ -48,19 +49,17 @@
         <p>
           De 2 sidste tal er Viewboxens størrelse, f.eks. ved at gøre viewBoxen mindre så vil indholdet se større ud.
         </p>
-        <svg viewBox="0 0 100 100" class="svg" style="border: 3px solid red">
+        <svg viewBox="0 0 100 100" class="svg">
             <circle cx='50' cy='50' r='25'
-                    fill='black'/>
+                    fill='blue'/>
         </svg>
         <span>viewBox="0 0 100 100"</span><br><br>
 
-        <svg viewBox="25 25 50 50" class="svg" style="border: 3px solid red">
+        <svg viewBox="25 25 50 50" class="svg">
             <circle cx='50' cy='50' r='25'
-                    fill='black'/>
+                    fill='blue'/>
         </svg>
         <span>viewBox="25 25 50 50"</span><br><br>
-
-
 
 
 
